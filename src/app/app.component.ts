@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {Router, NavigationEnd} from "@angular/router";
+import {Router, NavigationEnd} from '@angular/router'; // import Router and NavigationEnd
 
-  //declare ga as a function to set and sent the events
- declare let ga:Function;
+  // declare ga as a function to set and sent the events
+ declare let ga: Function;
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent {
 
    constructor(public router: Router) {
 
-    //subscribe to router events and send page views to google analytics
+    // subscribe to router events and send page views to google analytics
     this.router.events.subscribe(event => {
 
       if (event instanceof NavigationEnd) {

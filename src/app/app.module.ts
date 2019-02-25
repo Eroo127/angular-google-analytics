@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router'; //Import the Angular router module and Routes
-import {GoogleAnalyticsService} from "./google-analytics.service"; // import our analytics service
+import { RouterModule, Routes } from '@angular/router'; // Import the Angular router module and Routes
+import {GoogleAnalyticsService} from './google-analytics.service'; // import our analytics service
 
 
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ export const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [GoogleAnalyticsService], //add it as a provider
+  providers: [GoogleAnalyticsService], // add it as a provider
   bootstrap: [AppComponent]
 })
 export class AppModule { }
